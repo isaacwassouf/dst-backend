@@ -17,12 +17,23 @@ Follow these steps to set up and run the SvelteKit app:
    composer install
 
 
-2. **Run the database migrataion**
+2. **Setup environment file**
+
+   ```bash
+   cp .env.example .env
+
+3. **Setup App key**
+
+   ```bash
+    php artisan key:generate
+
+
+4. **Run the database migrataion**
 
    ```bash
    php artisan migrate
 
-3. **Run the sever**
+5. **Run the sever**
 
    ```bash
    php artisan serve
